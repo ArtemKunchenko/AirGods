@@ -162,10 +162,13 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    
+  
 }
 .main-container>article>h1{
-    background: linear-gradient(0.25turn, #3f87a600, rgba(38, 192, 227, 0.247), #f69c3c00);
+    padding: 5px;
+    border-radius: 7px;
+    border: 5px solid rgb(38, 193, 227);
+    margin: 15px;
 }
 .main-container>article>div{
     display: flex;
