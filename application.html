@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/74324e04b7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navigation-container">
+        <a id="Link" href="./index.html"><i class="icon fas fa-home" data-label="ГОЛОВНА"></i></a>
+        <a id="Link" href="./courses.html"><i class="icon fas fa-user-graduate" data-label="КУРСИ"></i></a>
+        <a id="Link" href="./application.html"><i class="icon fas fa-pen-to-square" data-label="ПОДАТИ ЗАЯВКУ"></i></a>
+        <a id="Link" href="./gallery.html"><i class="icon fas fa-camera-retro" data-label="ФОТОГАЛЕРЕЯ"></i></a>
+        <a id="Link" href="./contacts.html"><i class="icon fas fa-phone-flip" data-label="КОНТАКТИ"></i></a>
+
+    </nav>
+    <div class="main-container">
+        <header id="Header">
+            <div> <img src="./img/Header.png" alt=""></div>
+            <div><img src="./img/Logo.png" alt=""></div>
+
+
+
+        </header>
+        <article>
+
+            <h1>Заповніть форму для реєстрації на курс</h1>
+            <div style="text-align: justify;">
+                <form>
+                    <p><i>Після опрацювання заявки наш менеджер обов'язково з Вами зв'яжиться! </i></p>
+                    <fieldset>
+                        <legend>Контактна інформація</legend>
+                        <div>
+                            <label for="name">П.І.Б:<em>*</em></label>
+                            <input type="text" placeholder="Іванов Іван Іванович" required>
+                        </div>
+                        <div>
+                            <label for="phone">Контактний телефон:<em>*</em> </label>
+                            <input type="tel" name="phone" placeholder="+380(__)-___-__-__"
+                                pattern="\+380\(\d{2}\)-\d{3}-\d{2}-\d{2}" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:<em class="zirochka">*</em> </label>
+                            <input type="email" placeholder="email" required>
+                        </div>
+                        <div>
+                            <label for="cours">Оберіть курс:<em>*</em> </label>
+                            <select name="cours" id="cours">
+                                <option selected="kids">KIDS</option>
+                                <option value="videographer">VIDEOGRAPHER</option>
+                                <option value="military">MILITARY</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <p><i>Заповніть невеличку анкету для поліпшення якості облуговування</i></p>
+                    <fieldset>
+                        <div>
+                            <label for="region">Звідки Ви?:</label>
+                            <input type="text" placeholder="Область, місто">
+                        </div>
+                        <div>
+                            <label for="source">Як дізнались про курс?:</label>
+                            <select name="source" id="source">
+                                <option selected="social_media">Соціальні мережі</option>
+                                <option value="tv">Телебачення</option>
+                                <option value="advertisement">Наружна реклама</option>
+                                <option value="friends">Друзі</option>
+                                <option value="other">Інше</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="choice">Чи проходили раніше подібний курс?:</label>
+                            <select name="choice" id="choice">
+                                <option selected="yes">Так</option>
+                                <option value="no">Ні</option>
+
+                            </select>
+                        </div>
+                        <div>
+                            <label for="IDP">Маю статус ВПО </label>
+                            <input type="checkbox" name="IDP" id="IDP">
+                        </div>
+                        <div>
+                            <label for="military">Маю відношення до сил безпеки та оборони </label>
+                            <input type="checkbox" name="military" id="military">
+                        </div>
+                        <div>
+                            <label for="choice">Чи бажаєте отримувати новини електронною поштою?:</label>
+                            <select name="choice" id="choice">
+                                <option selected="yes">Так</option>
+                                <option value="no">Ні</option>
+
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <inputtype="submit" value="Відправити">
+                    </div>
+            </div>
+
+
+        </article>
+        <div id="up-button-container">
+            <div><a href="#Header"><i class="fa-solid fa-circle-arrow-up"></i>ВГОРУ</a></div>
+
+        </div>
+        <footer>
+            <div>* контент для наповнення сайту вигаданий автором, будь які співпадіння з реальними людьми або назвами є
+                випадковими </div>
+            <div>Follow for more <a href="https://github.com/ArtemKunchenko"> <i class="fa-brands fa-github"></i>
+                    ArtemKunchenko</a></div>
+            <div>© Created by Artem Kunchenko </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
